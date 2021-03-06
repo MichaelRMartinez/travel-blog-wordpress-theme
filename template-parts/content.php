@@ -11,21 +11,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<!-- background image -->
-	<section class="hero">
-		<div class="hero-content">
-			<?php if( get_field('hero_image') ): ?>
-				<p><?php the_field('hero_image'); ?></p>
-			<?php endif; ?>
-
+	<section class="hero min-vh-100 cover bg-center flex items-center justify-center" style="<?php if( get_field('hero_image') ): ?>
+		background-image: url(<?php the_field('hero_image'); ?>);
+	<?php endif; ?>">
+		<div class="hero-content white tc">
 			<!-- title -->
-			<h1><?php the_title(); ?></h1>
+			<h1 class="bold mt0 mb2 ttu hero-heading"><?php the_title(); ?></h1>
 			<!-- subheading -->
 			<?php if( get_field('subhead') ): ?>
-				<p><?php the_field('subhead'); ?></p>
+				<p class="mb6 mt0 white ttu hero-subhead"><?php the_field('subhead'); ?></p>
 			<?php endif; ?>
 			<!-- formatted date -->
 			<?php if( get_field('date') ): ?>
-				<p><?php the_field('date'); ?></p>
+				<p class="f6 bold ma0 white ttu tracked date"><?php the_field('date'); ?></p>
 			<?php endif; ?>
 		</div>
 	</section>
