@@ -1,3 +1,22 @@
+/* GLOBAL */
+body {
+    font-family: 'Cardo', Georgia, serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cardo {
+    font-family: 'Cardo', Georgia, serif;
+}
+
+.archivo {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.tenor {
+    font-family: 'Tenor Sans', sans-serif;
+}
+
 /* HERO */
 .hero-heading,
 .hero-subhead {
