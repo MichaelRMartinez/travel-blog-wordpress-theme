@@ -18,7 +18,19 @@ body {
 }
 
 /* HERO */
+.hero {
+    text-shadow: 2px 2px #000;
+}
+
+.hero-heading {
+    letter-spacing: 0.1em;
+}
+
 .hero-heading,
 .hero-subhead {
     font-size: 64px;
+}
+
+.hero-content {
+    max-width: 750px;
 }
